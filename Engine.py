@@ -14,7 +14,7 @@ class Engine:
         pygame.init()
 
         # Init settings
-        self.settings = Settings(1000)
+        self.settings = Settings(board_width=1000)
         print("Init : Settings")
 
         # Handlers and managers

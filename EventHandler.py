@@ -13,6 +13,8 @@ class EventHandler:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+                sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  # LEFT
                 self.on_left_mouse_button_down()
             elif event.type == pygame.MOUSEBUTTONUP and event.button == 1:  # LEFT

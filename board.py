@@ -13,6 +13,7 @@ class Board:
         pass
 
     def get_pieces_list(self):
+
         list = []
         for i in range(8):
             for j in range(8):
